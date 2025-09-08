@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تخصص‌ها | محمدرضا ستاری</title>
+
+  <!-- استایل‌های اصلی (در صورت داشتن style.css، نگه‌دار؛ این‌ها حداقل‌های لازم‌اند) -->
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <style>
+    :root{
+      --navy:#0b1c2c; --gold:#d4af37; --gold-dark:#b8902f;
+      --burgundy:#800020; --marble:#f6f0e9; --ink:#222; --muted:#666;
+    }
+    body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:#fdfaf5;color:var(--ink)}
+    header{
+      background:var(--navy);color:#fff;padding:12px 20px;
+      display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+      border-bottom:1px solid rgba(212,175,55,.35)
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:60px}
+    .brand .title{font-weight:700}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;flex-wrap:wrap}
+    nav a{color:var(--gold);text-decoration:none;font-weight:bold;border-bottom:2px solid transparent;padding:6px 2px}
+    nav a:hover{color:#fff;border-color:var(--gold)}
+    .lang-switch{display:flex;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(212,175,55,.4);padding:6px 10px;border-radius:999px}
+    .lang-btn{background:transparent;border:0;color:var(--gold);font-weight:bold;cursor:pointer;border-radius:999px;padding:6px 10px}
+    .lang-btn.active{background:var(--gold);color:var(--navy)}
+
+    main{padding:26px 18px}
+    .page-title{text-align:center;margin:10px 0 24px}
+    .page-title h1{color:var(--navy);margin:0 0 8px}
+    .page-title p{color:var(--muted);margin:0}
+
+    .gallery{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:10px 0}
+    .gallery img{width:300px;max-width:42vw;border-radius:8px;display:block;border:1px solid rgba(11,28,44,.08)}
+
+    footer{margin-top:40px;text-align:center;padding:18px;background:#0f2031;color:#ccc;border-top:1px solid rgba(212,175,55,.25)}
+    footer strong{color:var(--gold)}
+
+    /* کنترل نمایش زبان‌ها */
+    .i18n{display:none}
+    .lang-fa .i18n-fa{display:inline}
+    .lang-en .i18n-en{display:inline}
+    .lang-section{display:none}
+    .lang-section.active{display:block}
+  </style>
+</head>
+<body class="lang-fa">
+
+  <!-- هدر دو زبانه -->
+  <header>
+    <div class="brand">
+      <img src="assets/images/logo/logo-main.png" alt="لوگوی محمدرضا ستاری">
+      <div class="title">
+        <span class="i18n i18n-fa">محمدرضا ستاری | وبسایت رسمی</span>
+        <span class="i18n i18n-en">Mohamadreza Sattari | Official Website</span>
+      </div>
+    </div>
+
+    <nav aria-label="Main Navigation">
+  <ul>
+    <li>
+      <a href="index.html">
+        <span class="i18n i18n-fa">خانه</span>
+        <span class="i18n i18n-en">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="takhasos.html">
+        <span class="i18n i18n-fa">تخصص‌ها</span>
+        <span class="i18n i18n-en">Expertise</span>
+      </a>
+    </li>
+    <li>
+      <a href="eftekharaat.html">
+        <span class="i18n i18n-fa">افتخارات</span>
+        <span class="i18n i18n-en">Honors</span>
+      </a>
+    </li>
+    <li>
+      <a href="projects.html">
+        <span class="i18n i18n-fa">پروژه‌ها</span>
+        <span class="i18n i18n-en">Projects</span>
+      </a>
+    </li>
+    <li>
+      <a href="education.html">
+        <span class="i18n i18n-fa">آموزش</span>
+        <span class="i18n i18n-en">Training</span>
+      </a>
+    </li>
+    <li>
+      <a href="classes.html">
+        <span class="i18n i18n-fa">کلاس‌ها و منابع آموزشی</span>
+        <span class="i18n i18n-en">Classes & Resources</span>
+      </a>
+    </li>
+    <li>
+      <a href="contact.html">
+        <span class="i18n i18n-fa">تماس</span>
+        <span class="i18n i18n-en">Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+    <div class="lang-switch" role="group" aria-label="Language switch">
+      <button class="lang-btn active" data-lang="fa" aria-pressed="true">فارسی</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- محتوا: فارسی -->
+  <main id="content-fa" class="lang-section active">
+    <section class="page-title">
+      <h1>تخصص‌ها</h1>
+      <p>گواهی‌های تخصصی و مدارک معتبر در حوزه بافت، مرمت و کارشناسی</p>
+    </section>
+
+    <!-- گالری مدارک (حداکثر ۵ تصویر؛ فعلاً ۲ نمونه) -->
+    <section class="gallery" aria-label="گالری گواهی‌های تخصصی">
+      <a href="assets/images/takhasos/takhasos-01-doctorate.jpg" data-lightbox="takhasos-fa" data-title="مدرک دکترا">
+        <img src="assets/images/takhasos/takhasos-01-doctorate.jpg" alt="مدرک دکترا">
+      </a>
+
+      <a href="assets/images/takhasos/takhasos-02-30yers.jpg" data-lightbox="takhasos-fa" data-title="۳۰ سال تجربه تخصصی">
+        <img src="assets/images/takhasos/takhasos-02-30yers.jpg" alt="گواهی ۳۰ سال تجربه تخصصی">
+      </a>
+    </section>
+  </main>
+
+  <!-- محتوا: English -->
+  <main id="content-en" class="lang-section">
+    <section class="page-title">
+      <h1>Expertise</h1>
+      <p>Professional certifications and credentials in weaving, restoration, and appraisal</p>
+    </section>
+
+    <!-- Certificates gallery (up to 5 images; 2 samples now) -->
+    <section class="gallery" aria-label="Expertise certificates gallery">
+      <a href="assets/images/takhasos/takhasos-01-doctorate.jpg" data-lightbox="takhasos-en" data-title="Doctorate Certificate">
+        <img src="assets/images/takhasos/takhasos-01-doctorate.jpg" alt="Doctorate Certificate">
+      </a>
+
+      <a href="assets/images/takhasos/takhasos-02-30yers.jpg" data-lightbox="takhasos-en" data-title="30 Years of Specialized Experience">
+        <img src="assets/images/takhasos/takhasos-02-30yers.jpg" alt="30 Years of Specialized Experience">
+      </a>
+    </section>
+  </main>
+
+  <!-- فوتر دو زبانه -->
+  <footer>
+    <p class="i18n i18n-fa">© کلیه حقوق محفوظ است – <strong>محمدرضا ستاری</strong></p>
+    <p class="i18n i18n-en">© All rights reserved – <strong>Mohamadreza Sattari</strong></p>
+  </footer>
+
+  <!-- اسکریپت‌ها -->
+  <script src="assets/js/lightbox.js"></script>
+  <script>
+    (function(){
+      const html = document.documentElement;
+      const body = document.body;
+      const faBtn = document.querySelector('.lang-btn[data-lang="fa"]');
+      const enBtn = document.querySelector('.lang-btn[data-lang="en"]');
+      const faMain = document.getElementById('content-fa');
+      const enMain = document.getElementById('content-en');
+
+      function setLang(lang){
+        const isFA = lang === 'fa';
+
+        html.setAttribute('lang', isFA ? 'fa' : 'en');
+        html.setAttribute('dir', isFA ? 'rtl' : 'ltr');
+
+        body.classList.toggle('lang-fa', isFA);
+        body.classList.toggle('lang-en', !isFA);
+
+        faMain.classList.toggle('active', isFA);
+        enMain.classList.toggle('active', !isFA);
+
+        faBtn.classList.toggle('active', isFA);
+        enBtn.classList.toggle('active', !isFA);
+        faBtn.setAttribute('aria-pressed', isFA ? 'true' : 'false');
+        enBtn.setAttribute('aria-pressed', !isFA ? 'true' : 'false');
+
+        document.title = isFA ? 'تخصص‌ها | محمدرضا ستاری' : 'Expertise | Mohamadreza Sattari';
+
+        try{ localStorage.setItem('site-lang', lang); }catch(e){}
+      }
+
+      let initial = 'fa';
+      try{
+        const saved = localStorage.getItem('site-lang');
+        if(saved === 'fa' || saved === 'en') initial = saved;
+      }catch(e){}
+      setLang(initial);
+
+      faBtn.addEventListener('click', ()=> setLang('fa'));
+      enBtn.addEventListener('click', ()=> setLang('en'));
+    })();
+  </script>
+</body>
+</html>
