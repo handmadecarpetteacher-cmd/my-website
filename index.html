@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/my-website/">
+
   <title>محمدرضا ستاری | وبسایت رسمی</title>
   <style>
     :root{
@@ -50,7 +50,7 @@
   <!-- هدر -->
   <header>
     <div class="brand">
-      <img src="assets/images/logo/logo-main.png" alt="لوگو">
+      <img src="./assets/images/logo/logo-main.png" alt="لوگو">
       <div class="title">
         <span class="i18n i18n-fa">محمدرضا ستاری | وبسایت رسمی</span>
         <span class="i18n i18n-en">Mohamadreza Sattari | Official Website</span>
@@ -117,7 +117,7 @@
     <section class="hero">
       <h1>به وبسایت رسمی محمدرضا ستاری خوش آمدید</h1>
       <p>با بیش از <strong>۳۰ سال</strong> تجربه در بافت، مرمت و کارشناسی فرش‌های نفیس، این مجموعه با موزه‌ها، سفارتخانه‌ها، حراجی‌ها و کلکسیونرهای سراسر جهان همکاری می‌کند.</p>
-      <img src="assets/images/hero/hero-image.jpg" alt="تصویر شاخص">
+      <img src="./assets/images/hero/hero-image.jpg" alt="تصویر شاخص">
       <div>
         <a href="takhasos.html" class="btn">شروع بازدید</a>
         <a href="contact.html" class="btn alt">درخواست مشاوره</a>
@@ -130,7 +130,7 @@
     <section class="hero">
       <h1>Welcome to the Official Website of Mohamadreza Sattari</h1>
       <p>With over <strong>30 years</strong> of expertise in weaving, restoration, and appraisal of fine carpets, this institution collaborates with museums, embassies, auction houses, and collectors worldwide.</p>
-      <img src="assets/images/hero/hero-image.jpg" alt="Hero image">
+      <img src="./assets/images/hero/hero-image.jpg" alt="Hero image">
       <div>
         <a href="takhasos.html" class="btn">Explore</a>
         <a href="contact.html" class="btn alt">Request Consultation</a>
@@ -154,28 +154,4 @@
       const enMain=document.getElementById('content-en');
       function setLang(lang){
         const isFA=lang==='fa';
-        html.lang=isFA?'fa':'en';
-        html.dir=isFA?'rtl':'ltr';
-        body.classList.toggle('lang-fa',isFA);
-        body.classList.toggle('lang-en',!isFA);
-        faMain.classList.toggle('active',isFA);
-        enMain.classList.toggle('active',!isFA);
-        faBtn.classList.toggle('active',isFA);
-        enBtn.classList.toggle('active',!isFA);
-        faBtn.ariaPressed=isFA;
-        enBtn.ariaPressed=!isFA;
-        document.title=isFA
-          ? 'محمدرضا ستاری | وبسایت رسمی'
-          : 'Mohamadreza Sattari | Official Website';
-        try{localStorage.setItem('site-lang',lang);}catch{}
-      }
-      let initial='fa';
-      try{const saved=localStorage.getItem('site-lang'); if(saved==='fa'||saved==='en') initial=saved}catch{}
-      setLang(initial);
-      faBtn.addEventListener('click',()=>setLang('fa'));
-      enBtn.addEventListener('click',()=>setLang('en'));
-    })();
-  </script>
-</body>
-</html>
-
+        html.lang=isFA
