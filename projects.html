@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>پروژه‌ها | محمدرضا ستاری</title>
 
-  <link rel="stylesheet" href="./assets/css/lightbox.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
   <style>
     :root{
       --navy:#0b1c2c; --gold:#d4af37; --gold-dark:#b8902f;
@@ -40,6 +40,7 @@
     footer{margin-top:40px;text-align:center;padding:18px;background:#0f2031;color:#ccc;border-top:1px solid rgba(212,175,55,.25)}
     footer strong{color:var(--gold)}
 
+    /* کنترل نمایش زبان‌ها */
     .i18n{display:none}
     .lang-fa .i18n-fa{display:inline}
     .lang-en .i18n-en{display:inline}
@@ -49,19 +50,63 @@
 </head>
 <body class="lang-fa">
 
+  <!-- هدر دو زبانه -->
   <header>
     <div class="brand">
-      <img src="./assets/images/logo/logo-main.png" alt="لوگوی محمدرضا ستاری">
+      <img src="assets/images/logo/logo-main.png" alt="لوگوی محمدرضا ستاری">
       <div class="title">
         <span class="i18n i18n-fa">محمدرضا ستاری | وبسایت رسمی</span>
         <span class="i18n i18n-en">Mohamadreza Sattari | Official Website</span>
       </div>
     </div>
 
-    <!-- منو -->
     <nav aria-label="Main Navigation">
-      <!-- ... منو بدون تغییر ... -->
-    </nav>
+  <ul>
+    <li>
+      <a href="index.html">
+        <span class="i18n i18n-fa">خانه</span>
+        <span class="i18n i18n-en">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="takhasos.html">
+        <span class="i18n i18n-fa">تخصص‌ها</span>
+        <span class="i18n i18n-en">Expertise</span>
+      </a>
+    </li>
+    <li>
+      <a href="eftekharaat.html">
+        <span class="i18n i18n-fa">افتخارات</span>
+        <span class="i18n i18n-en">Honors</span>
+      </a>
+    </li>
+    <li>
+      <a href="projects.html">
+        <span class="i18n i18n-fa">پروژه‌ها</span>
+        <span class="i18n i18n-en">Projects</span>
+      </a>
+    </li>
+    <li>
+      <a href="education.html">
+        <span class="i18n i18n-fa">آموزش</span>
+        <span class="i18n i18n-en">Training</span>
+      </a>
+    </li>
+    <li>
+      <a href="classes.html">
+        <span class="i18n i18n-fa">کلاس‌ها و منابع آموزشی</span>
+        <span class="i18n i18n-en">Classes & Resources</span>
+      </a>
+    </li>
+    <li>
+      <a href="contact.html">
+        <span class="i18n i18n-fa">تماس</span>
+        <span class="i18n i18n-en">Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
 
     <div class="lang-switch" role="group" aria-label="Language switch">
       <button class="lang-btn active" data-lang="fa" aria-pressed="true">فارسی</button>
@@ -76,52 +121,122 @@
       <p>نمونه‌ای از پروژه‌های انجام‌شده</p>
     </section>
 
-    <section class="projects">
+    <section class="projects" aria-label="گالری پروژه‌ها">
+      <!-- پروژه ۱ -->
       <div class="project-card">
-        <a href="./assets/images/projects/project-01.jpg" data-lightbox="projects-fa" data-title="...">
-          <img src="./assets/images/projects/project-01.jpg" alt="...">
+        <a href="assets/images/projects/project-01.jpg"
+           data-lightbox="projects-fa"
+           data-title="گواهی حسن انجام کار ۳۶ تخته از فرش‌های کاخ نیاوران در موزه فرش ایران به تأیید آقای اسکندر پورخرمی، مدیریت موزه فرش ایران.">
+          <img src="assets/images/projects/project-01.jpg"
+               alt="گواهی حسن انجام کار ۳۶ تخته از فرش‌های کاخ نیاوران">
         </a>
         <h3>پروژه شماره ۱</h3>
-        <p>...</p>
+        <p>گواهی حسن انجام کار ۳۶ تخته از فرش‌های کاخ نیاوران در موزه فرش ایران به تأیید آقای اسکندر پورخرمی، مدیریت موزه فرش ایران.</p>
       </div>
 
+      <!-- پروژه ۲ -->
       <div class="project-card">
-        <a href="./assets/images/projects/project-02.jpg" data-lightbox="projects-fa" data-title="...">
-          <img src="./assets/images/projects/project-02.jpg" alt="...">
+        <a href="assets/images/projects/project-02.jpg"
+           data-lightbox="projects-fa"
+           data-title="گواهی تأییدی همان پروژه توسط استاد مرمت موزه فرش ایران و بازرس پروژه آقای اکبر نوبریان.">
+          <img src="assets/images/projects/project-02.jpg"
+               alt="گواهی تأییدی آن پروژه توسط استاد مرمت و بازرس پروژه">
         </a>
         <h3>پروژه شماره ۲</h3>
-        <p>...</p>
+        <p>گواهی تأییدی همان پروژه توسط استاد مرمت موزه فرش ایران و بازرس پروژه آقای اکبر نوبریان.</p>
       </div>
 
+      <!-- پروژه ۳ -->
       <div class="project-card">
-        <a href="./assets/images/projects/project-03.jpg" data-lightbox="projects-fa" data-title="...">
-          <img src="./assets/images/projects/project-03.jpg" alt="...">
+        <a href="assets/images/projects/project-03.jpg"
+           data-lightbox="projects-fa"
+           data-title="کارگاه آموزشی در کشور عمان برای حفظ و نگهداری فرش مسجد سلطان قابوس.">
+          <img src="assets/images/projects/project-03.jpg"
+               alt="کارگاه آموزشی در عمان برای حفظ فرش مسجد سلطان قابوس">
         </a>
         <h3>پروژه شماره ۳</h3>
-        <p>...</p>
+        <p>کارگاه آموزشی در کشور عمان برای حفظ و نگهداری فرش مسجد سلطان قابوس.</p>
       </div>
 
+      <!-- پروژه ۴ -->
       <div class="project-card">
-        <a href="./assets/images/projects/project-04.jpg" data-lightbox="projects-fa" data-title="...">
-          <img src="./assets/images/projects/project-04.jpg" alt="...">
+        <a href="assets/images/projects/project-04.jpg"
+           data-lightbox="projects-fa"
+           data-title="کارگاه آموزشی در ژاپن، موزه ابریشم استان یوکوهاما.">
+          <img src="assets/images/projects/project-04.jpg"
+               alt="کارگاه آموزشی در ژاپن، موزه ابریشم یوکوهاما">
         </a>
         <h3>پروژه شماره ۴</h3>
-        <p>...</p>
+        <p>کارگاه آموزشی در ژاپن، موزه ابریشم استان یوکوهاما.</p>
       </div>
     </section>
   </main>
 
-  <!-- محتوای انگلیسی -->
+  <!-- Content: English -->
   <main id="content-en" class="lang-section">
-    <!-- همان تغییر مسیرها برای نسخه انگلیسی -->
+    <section class="page-title">
+      <h1>Projects</h1>
+      <p>Selected completed works</p>
+    </section>
+
+    <section class="projects" aria-label="Projects gallery">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <a href="assets/images/projects/project-01.jpg"
+           data-lightbox="projects-en"
+           data-title="Certificate of successful completion of 36-piece restoration of Niyavaran Palace carpets at the Iran Carpet Museum, approved by Mr. Eskandar Pour-Khorrami, Director of the Iran Carpet Museum.">
+          <img src="assets/images/projects/project-01.jpg"
+               alt="Certificate of successful completion of 36-piece restoration of Niyavaran Palace carpets">
+        </a>
+        <h3>Project No. 1</h3>
+        <p>Certificate of successful completion of a 36-piece restoration of Niyavaran Palace carpets at the Iran Carpet Museum, approved by Mr. Eskandar Pour-Khorrami, Director of the Iran Carpet Museum.</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <a href="assets/images/projects/project-02.jpg"
+           data-lightbox="projects-en"
+           data-title="Confirmation certificate of the same project by the chief restorer of the Iran Carpet Museum and project inspector Mr. Akbar Nobarian.">
+          <img src="assets/images/projects/project-02.jpg"
+               alt="Confirmation certificate by the chief restorer and project inspector">
+        </a>
+        <h3>Project No. 2</h3>
+        <p>Confirmation certificate of the same project by the chief restorer of the Iran Carpet Museum and project inspector Mr. Akbar Nobarian.</p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <a href="assets/images/projects/project-03.jpg"
+           data-lightbox="projects-en"
+           data-title="Training workshop in Oman for the preservation and conservation of Sultan Qaboos Mosque carpets.">
+          <img src="assets/images/projects/project-03.jpg"
+               alt="Training workshop in Oman for Sultan Qaboos Mosque carpets">
+        </a>
+        <h3>Project No. 3</h3>
+        <p>Training workshop in Oman for the preservation and conservation of Sultan Qaboos Mosque carpets.</p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <a href="assets/images/projects/project-04.jpg"
+           data-lightbox="projects-en"
+           data-title="Training workshop in Japan at the Yokohama Silk Museum.">
+          <img src="assets/images/projects/project-04.jpg"
+               alt="Training workshop in Japan at the Yokohama Silk Museum">
+        </a>
+        <h3>Project No. 4</h3>
+        <p>Training workshop in Japan at the Yokohama Silk Museum.</p>
+      </div>
+    </section>
   </main>
 
+  <!-- فوتر دو زبانه -->
   <footer>
     <p class="i18n i18n-fa">© کلیه حقوق محفوظ است – <strong>محمدرضا ستاری</strong></p>
     <p class="i18n i18n-en">© All rights reserved – <strong>Mohamadreza Sattari</strong></p>
   </footer>
 
-  <script src="./assets/js/lightbox.js"></script>
+  <script src="assets/js/lightbox.js"></script>
   <script>
     (function(){
       const html = document.documentElement;
@@ -135,15 +250,20 @@
         const isFA = lang === 'fa';
         html.setAttribute('lang', isFA ? 'fa' : 'en');
         html.setAttribute('dir', isFA ? 'rtl' : 'ltr');
+
         body.classList.toggle('lang-fa', isFA);
         body.classList.toggle('lang-en', !isFA);
+
         faMain.classList.toggle('active', isFA);
         enMain.classList.toggle('active', !isFA);
+
         faBtn.classList.toggle('active', isFA);
         enBtn.classList.toggle('active', !isFA);
         faBtn.setAttribute('aria-pressed', isFA ? 'true' : 'false');
         enBtn.setAttribute('aria-pressed', !isFA ? 'true' : 'false');
+
         document.title = isFA ? 'پروژه‌ها | محمدرضا ستاری' : 'Projects | Mohamadreza Sattari';
+
         try{ localStorage.setItem('site-lang', lang); }catch(e){}
       }
 
